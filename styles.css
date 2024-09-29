@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-image: url(Images/library-2.jpg);
+}
+
+.page {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;  /* Ensure page width takes the full viewport */
+    text-align: center;
+    position: relative; /* Prevent overlap */
+    margin-bottom: 5rem;
+}
+
+.page:target {
+    display: flex;
+}
+
+#landing-page {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Landing Page Styling */
+.landing-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5%; /* Use percentage for responsiveness */
+    border-radius: 1rem; /* Equivalent to 16px */
+}
+
+h1 {
+    font-size: 3.75rem; /* Equivalent to 60px */
+    letter-spacing: 0.625rem; /* Equivalent to 10px */
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.25rem; /* Equivalent to 20px */
+    margin-top: 0.3125rem; /* Equivalent to 5px */
+}
+
+.login-buttons {
+    margin-top: 2.5rem; /* Equivalent to 40px */
+}
+
+a.btn {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 2.5rem; /* Equivalent to 15px 40px */
+    margin: 0.625rem; /* Equivalent to 10px */
+    border-radius: 1.875rem; /* Equivalent to 30px */
+    font-size: 1.125rem; /* Equivalent to 18px */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #ccc;
+}
+
+.signup {
+    margin-top: 1.875rem; /* Equivalent to 30px */
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Login Page Styling */
+.login-box {
+    background: rgba(0, 0, 0, 0.881);
+    padding: 5%; /* Use percentage for responsiveness */
+    border-radius: 1.25rem; /* Equivalent to 20px */
+    color: white;
+    max-width: 40%; /* Prevent overflow */
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem; /* Equivalent to 32px */
+    margin-bottom: 1.25rem; /* Equivalent to 20px */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    
+
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+    padding: 1rem; /* Equivalent to 15px */
+    border-radius: 0.3125rem; /* Equivalent to 5px */
+    border: none;
+    font-size: 1rem; /* Equivalent to 16px */
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+    outline: none;
+    box-shadow: 0 0 0.625rem 0.125rem rgba(255, 255, 255, 0.5); /* Equivalent to 10px 2px */
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 1rem; /* Equivalent to 15px */
+    border-radius: 1.875rem; /* Equivalent to 30px */
+    font-size: 1.125rem; /* Equivalent to 18px */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+.back-btn:hover {
+    background-color: #ccc;
+} 
+
+/* Sign-Up Page */
+.sign-up-box {
+    background: rgba(0, 0, 0, 0.815);
+    padding: 5%; 
+    border-radius: 1.25rem; 
+    color: white;
+    justify-content:flex-start;
+    margin-top: 4rem;
+}
+
